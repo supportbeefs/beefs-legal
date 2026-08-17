@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy - Beefs</title>
+    <meta
+      name="description"
+      content="How the Beefs app collects, uses and protects your personal data, and how to delete your account." />
+    <link rel="canonical" href="https://supportbeefs.github.io/beefs-legal/privacy.html" />
+    <style>
+      :root {
+        --brand: #f5361f;
+        --bg: #ffffff;
+        --surface: #f6f6f7;
+        --border: #e3e4e8;
+        --text: #16181c;
+        --text-secondary: #4a4e57;
+        --text-muted: #767b85;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1114;
+          --surface: #171a1f;
+          --border: #272b32;
+          --text: #f2f3f5;
+          --text-secondary: #b9bec7;
+          --text-muted: #868c96;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+      }
+
+      .wrap {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: var(--text);
+      }
+
+      .brand span.dot {
+        width: 0.85rem;
+        height: 0.85rem;
+        border-radius: 999px;
+        background: var(--brand);
+      }
+
+      h1 {
+        font-size: 2.1rem;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        margin: 1.25rem 0 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        letter-spacing: -0.02em;
+        margin: 2.75rem 0 0.75rem;
+        scroll-margin-top: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        margin: 1.75rem 0 0.4rem;
+      }
+
+      p,
+      li {
+        color: var(--text-secondary);
+      }
+
+      li {
+        margin-bottom: 0.4rem;
+      }
+
+      strong {
+        color: var(--text);
+      }
+
+      a {
+        color: var(--brand);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+
+      .meta {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        margin: 0;
+      }
+
+      .lead {
+        font-size: 1.05rem;
+      }
+
+      nav.toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0.9rem;
+        padding: 1.25rem 1.5rem;
+        margin: 2rem 0 0;
+      }
+
+      nav.toc h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        margin: 0 0 0.6rem;
+      }
+
+      nav.toc ol {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      nav.toc li {
+        margin-bottom: 0.25rem;
+      }
+
+      .callout {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--brand);
+        border-radius: 0.75rem;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+      }
+
+      .callout p:last-child {
+        margin-bottom: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.6rem 0.75rem;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-secondary);
+      }
+
+      th {
+        color: var(--text);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .table-scroll {
+        overflow-x: auto;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a class="brand" href="./index.html"><span class="dot"></span>Beefs</a>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: 17 August 2026</p>
+      </header>
+
+      <p class="lead">
+        Beefs is a mobile app where you challenge other people to a beef - any competition, debate or
+        duel - and settle it together. This policy explains what personal data the app collects, why
+        it is collected, who it is shared with, and how you can get it deleted.
+      </p>
+
+      <div class="callout">
+        <p>
+          <strong>The short version.</strong> We collect the account and profile details you type in,
+          the profile picture you pick, and the beefs, messages, results and votes you create in the
+          app. We use them to run the app and nothing else. We do not run ads, analytics or tracking
+          SDKs, and we never sell your data. Your profile and your public beefs are visible to other
+          users of the app - everything else is private to you and the person you are beefing with.
+        </p>
+      </div>
+
+      <nav class="toc">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#who-we-are">Who we are</a></li>
+          <li><a href="#data-we-collect">Data we collect</a></li>
+          <li><a href="#what-others-see">What other users can see</a></li>
+          <li><a href="#why">Why we use your data and our legal bases</a></li>
+          <li><a href="#not-collected">What we do not do</a></li>
+          <li><a href="#sharing">Who we share data with</a></li>
+          <li><a href="#transfers">International transfers</a></li>
+          <li><a href="#retention">How long we keep data</a></li>
+          <li><a href="#rights">Your rights</a></li>
+          <li><a href="#data-deletion">Deleting your account and data</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#links">Links posted by users</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="who-we-are">1. Who we are</h2>
+      <p>
+        Beefs (Android package and iOS bundle identifier <code>com.jovansreco.beefs</code>) is an
+        independent app published by Jovan Sreco. For the purposes of the EU/UK General Data
+        Protection Regulation, we are the data controller for the personal data described here.
+      </p>
+      <p>
+        You can reach us about anything in this policy, including access or deletion requests, at
+        <a href="mailto:supportbeefs@gmail.com">supportbeefs@gmail.com</a>.
+      </p>
+
+      <h2 id="data-we-collect">2. Data we collect</h2>
+      <p>
+        All of it comes either from what you enter in the app or from what the app needs in order to
+        work. We do not buy data about you from anyone.
+      </p>
+
+      <h3>Account</h3>
+      <ul>
+        <li>
+          <strong>Email address and password.</strong> Used to create and sign in to your account,
+          and to send you a confirmation or password-reset link when you ask for one. Your password
+          is stored only as a cryptographic hash by our authentication provider - we cannot read it.
+        </li>
+        <li>
+          <strong>Account identifier and timestamps</strong> (when the account was created and last
+          updated).
+        </li>
+      </ul>
+
+      <h3>Profile</h3>
+      <ul>
+        <li><strong>Display name</strong> and <strong>@handle</strong> - required, and public.</li>
+        <li>
+          <strong>Location</strong> - optional free text you type yourself, such as a city or
+          country. The app does not use GPS or any device location service.
+        </li>
+        <li><strong>Favourite categories</strong> - up to 20 categories you pick from a list.</li>
+        <li>
+          <strong>Profile picture</strong> - required to finish setting up a profile. See
+          <em>Photos</em> below.
+        </li>
+      </ul>
+
+      <h3>Beefs and the content you create</h3>
+      <ul>
+        <li>
+          <strong>Beef details</strong> - who you challenged, category, whether it is online or in
+          person, the terms, rules, stake, deadlines, and whether the beef is public or private.
+        </li>
+        <li>
+          <strong>Chat messages</strong> you send inside a beef, and the lifecycle entries that go
+          with it (created, accepted, rejected, cancelled, concluded).
+        </li>
+        <li>
+          <strong>Result offers</strong> you submit or respond to, and the notes attached to them.
+        </li>
+        <li>
+          <strong>Votes</strong> you cast on public beefs where the two participants disagree about
+          the result.
+        </li>
+        <li>
+          <strong>Read state</strong> - which beefs you have opened, so unread indicators work.
+        </li>
+      </ul>
+
+      <h3>Photos</h3>
+      <p>
+        When you tap to choose a profile picture, the app asks your device for permission to open
+        your photo library. Only the single image you select is uploaded; the app does not scan,
+        browse or upload anything else from your device, and it does not use your camera. Profile
+        pictures are stored in a publicly readable bucket so they can be shown next to your name in
+        the app.
+      </p>
+
+      <h3>Subscription (Beefs Pro)</h3>
+      <p>
+        If you buy a subscription, the purchase is processed by Apple's App Store or Google Play. We
+        receive only a subscription status (active, expired, cancelled) linked to an app-specific
+        purchase identifier, through our subscription provider. Your payment card, billing address
+        and full store account details never reach us.
+      </p>
+
+      <h3>Technical data</h3>
+      <p>
+        Our hosting provider records standard request logs when the app talks to our backend,
+        including your IP address, timestamp, the endpoint called and error details. These logs exist
+        for security, abuse prevention and debugging, and they are kept for a short period.
+      </p>
+
+      <h2 id="what-others-see">3. What other users can see</h2>
+      <p>
+        Beefs is a social app, so part of what you enter is deliberately visible to others. It is
+        worth being precise about which part:
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>What</th>
+              <th>Who can see it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Display name, @handle, location, favourite categories, profile picture</td>
+              <td>Any signed-in user of the app</td>
+            </tr>
+            <tr>
+              <td>Email address, password</td>
+              <td>Nobody but you - never shown to other users</td>
+            </tr>
+            <tr>
+              <td>A <strong>public</strong> beef: its terms, timeline, messages, offers and result</td>
+              <td>
+                Any signed-in user, plus anyone who opens a share link to that beef (a share link
+                works only for public beefs)
+              </td>
+            </tr>
+            <tr>
+              <td>A <strong>private</strong> beef and everything inside it</td>
+              <td>Only the two participants</td>
+            </tr>
+            <tr>
+              <td>Votes on a public beef</td>
+              <td>
+                Participants and spectators see the totals; your individual vote is not shown to the
+                participants
+              </td>
+            </tr>
+            <tr>
+              <td>Subscription status</td>
+              <td>Nobody but you</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Choose "public" only for a beef you are happy for strangers to read. A concluded beef becomes
+        a read-only transcript that both participants keep, which is why messages cannot be edited or
+        deleted after the fact.
+      </p>
+
+      <h2 id="why">4. Why we use your data and our legal bases</h2>
+      <p>
+        If you are in the EU, UK or another region with similar law, these are the legal bases we
+        rely on:
+      </p>
+      <ul>
+        <li>
+          <strong>Performance of a contract</strong> - creating and maintaining your account,
+          showing your profile, delivering challenges, chat, results and voting, and providing the
+          features of a paid subscription. Without this data there is no app.
+        </li>
+        <li>
+          <strong>Legitimate interests</strong> - keeping the service secure, preventing abuse and
+          spam, enforcing the rules of the beef lifecycle, diagnosing errors, and keeping a
+          tamper-proof record of a concluded beef for both participants.
+        </li>
+        <li>
+          <strong>Consent</strong> - access to your photo library, which your device asks for and
+          which you can withdraw at any time in your device settings (you will then not be able to
+          change your profile picture).
+        </li>
+        <li>
+          <strong>Legal obligation</strong> - keeping records we are required to keep, for example
+          in relation to purchases.
+        </li>
+      </ul>
+
+      <h2 id="not-collected">5. What we do not do</h2>
+      <ul>
+        <li>We do not use advertising networks, and there are no ads in the app.</li>
+        <li>
+          We do not use analytics, attribution or tracking SDKs, and we do not build advertising
+          profiles about you.
+        </li>
+        <li>We do not sell or rent your personal data, and we do not share it for cross-context behavioural advertising.</li>
+        <li>We do not collect your device location, contacts, calendar, microphone or health data.</li>
+        <li>We do not read your photo library beyond the one picture you select.</li>
+      </ul>
+
+      <h2 id="sharing">6. Who we share data with</h2>
+      <p>
+        We share data only with the service providers that make the app work. They process it on our
+        instructions under a data processing agreement, and only for the purpose listed:
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>What it does for us</th>
+              <th>Their policy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Supabase</td>
+              <td>Authentication, database, file storage for profile pictures, backend functions, logs</td>
+              <td><a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a></td>
+            </tr>
+            <tr>
+              <td>RevenueCat</td>
+              <td>Managing and validating subscription status</td>
+              <td>
+                <a href="https://www.revenuecat.com/privacy" rel="noopener"
+                  >revenuecat.com/privacy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>App distribution and in-app purchases on iOS</td>
+              <td>
+                <a href="https://www.apple.com/legal/privacy/" rel="noopener"
+                  >apple.com/legal/privacy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Google</td>
+              <td>App distribution and in-app purchases on Android</td>
+              <td>
+                <a href="https://policies.google.com/privacy" rel="noopener"
+                  >policies.google.com/privacy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Expo</td>
+              <td>Building the app and delivering over-the-air updates</td>
+              <td><a href="https://expo.dev/privacy" rel="noopener">expo.dev/privacy</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        We may also disclose data if we are legally required to, or where it is necessary to protect
+        our rights or someone's safety. If the app is ever transferred to a new owner, this policy
+        travels with it and you will be told before anything changes.
+      </p>
+
+      <h2 id="transfers">7. International transfers</h2>
+      <p>
+        Our providers may store and process data on servers outside your country, including in the
+        United States. Where data leaves the European Economic Area or the UK, the transfer relies on
+        the European Commission's Standard Contractual Clauses or another approved safeguard put in
+        place by the provider.
+      </p>
+
+      <h2 id="retention">8. How long we keep data</h2>
+      <ul>
+        <li>
+          <strong>Account, profile and beefs</strong> - for as long as your account exists. Beefs are
+          part of another person's history too, so they are not removed when they conclude.
+        </li>
+        <li>
+          <strong>After a deletion request</strong> - removed from our live systems within 30 days,
+          and from encrypted backups within 90 days.
+        </li>
+        <li><strong>Technical logs</strong> - a short retention period at our hosting provider.</li>
+        <li>
+          <strong>Purchase records</strong> - as long as required for accounting and tax purposes.
+        </li>
+      </ul>
+
+      <h2 id="rights">9. Your rights</h2>
+      <p>Depending on where you live, you can ask us to:</p>
+      <ul>
+        <li>give you a copy of the personal data we hold about you;</li>
+        <li>correct data that is wrong or out of date (most of it you can edit in the app);</li>
+        <li>delete your account and data (see the next section);</li>
+        <li>restrict or object to certain processing;</li>
+        <li>export your data in a portable format;</li>
+        <li>withdraw a consent you gave, such as photo library access.</li>
+      </ul>
+      <p>
+        Email <a href="mailto:supportbeefs@gmail.com">supportbeefs@gmail.com</a> from the address on
+        your account and we will respond within 30 days. There is no charge. If you are in the EEA or
+        the UK you also have the right to complain to your local data protection authority.
+      </p>
+      <p>
+        If you are a California resident: we do not sell or share personal information as those terms
+        are defined by the CCPA/CPRA, and we will never discriminate against you for exercising a
+        privacy right.
+      </p>
+
+      <h2 id="data-deletion">10. Deleting your account and data</h2>
+      <p>
+        To have your account deleted, email
+        <a href="mailto:supportbeefs@gmail.com">supportbeefs@gmail.com</a> from the email address you
+        signed up with, with the subject <strong>"Delete my account"</strong>. We will confirm and
+        complete the deletion within 30 days.
+      </p>
+      <p><strong>What is deleted:</strong></p>
+      <ul>
+        <li>your login credentials and email address;</li>
+        <li>
+          your profile - display name, @handle, location, favourite categories - and your profile
+          picture file;
+        </li>
+        <li>your read state and your votes on other people's beefs.</li>
+      </ul>
+      <p><strong>What is kept, and in what form:</strong></p>
+      <ul>
+        <li>
+          Beefs you took part in remain visible to the other participant as an anonymised record: the
+          messages, offers and result stay, but they are no longer linked to your name, handle or
+          picture. A beef is a shared history between two people, and erasing one side would destroy
+          the other person's record of it.
+        </li>
+        <li>
+          Aggregate vote counts on public beefs remain, as they are numbers that no longer identify
+          anyone.
+        </li>
+        <li>
+          Purchase and invoice records held by Apple, Google or our subscription provider are kept as
+          long as the law requires.
+        </li>
+      </ul>
+      <div class="callout">
+        <p>
+          Deleting your account does not cancel a subscription. Cancel it in your Apple App Store or
+          Google Play account settings, otherwise it will keep renewing.
+        </p>
+      </div>
+
+      <h2 id="children">11. Children</h2>
+      <p>
+        Beefs is not intended for children. You must be at least 13 years old to use it, or 16 if you
+        are in the European Economic Area or the UK. We do not knowingly collect data from anyone
+        below that age; if you believe a child has created an account, write to us and we will delete
+        it.
+      </p>
+
+      <h2 id="security">12. Security</h2>
+      <p>We take the usual precautions and a few specific ones:</p>
+      <ul>
+        <li>all traffic between the app and our backend is encrypted with TLS;</li>
+        <li>passwords are stored only as hashes, by our authentication provider;</li>
+        <li>
+          database access is protected by row-level security, so a request can only read the rows
+          that account is allowed to see;
+        </li>
+        <li>
+          every change to a beef goes through a server-side function that enforces the rules, rather
+          than letting the app write to tables directly;
+        </li>
+        <li>profile pictures can only be uploaded or replaced inside a folder tied to your own account.</li>
+      </ul>
+      <p>
+        No system is perfectly secure. If we ever discover a breach that affects your personal data,
+        we will notify you and the relevant authority as required by law.
+      </p>
+
+      <h2 id="links">13. Links posted by users</h2>
+      <p>
+        Messages, rules, stakes and offer notes can contain links that other users typed. Tapping one
+        opens it in your browser, outside Beefs. We do not control those sites and are not
+        responsible for their content or their privacy practices.
+      </p>
+
+      <h2 id="changes">14. Changes to this policy</h2>
+      <p>
+        If we change how we handle personal data, we will update this page and the "Last updated"
+        date above. Where a change is significant, we will also make it visible in the app before it
+        takes effect. Continuing to use Beefs after a change means you accept the updated policy.
+      </p>
+
+      <h2 id="contact">15. Contact</h2>
+      <p>
+        Questions, requests or complaints:
+        <a href="mailto:supportbeefs@gmail.com">supportbeefs@gmail.com</a>. We read every email.
+      </p>
+
+      <footer>
+        <p>Beefs - Privacy Policy - Last updated 17 August 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>
