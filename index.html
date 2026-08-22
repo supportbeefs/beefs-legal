@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beefs - Legal</title>
-    <meta name="description" content="Legal documents for the Beefs app." />
+    <title>Beefs</title>
+    <meta name="description" content="Download Beefs — challenge anyone, set the terms, settle the score." />
     <style>
       :root {
         --brand: #f5361f;
@@ -116,6 +116,18 @@
       <p>Challenge anyone. Set the terms. Settle the score.</p>
       <ul>
         <li>
+          <a class="card" href="https://apps.apple.com/app/id6800880494"
+            >App Store <span class="arrow">&rarr;</span></a
+          >
+        </li>
+        <li>
+          <a
+            class="card"
+            href="https://play.google.com/store/apps/details?id=com.jovansreco.beefs"
+            >Google Play <span class="arrow">&rarr;</span></a
+          >
+        </li>
+        <li>
           <a class="card" href="./privacy.html">Privacy Policy <span class="arrow">&rarr;</span></a>
         </li>
       </ul>
@@ -123,5 +135,46 @@
         Support: <a href="mailto:supportbeefs@gmail.com">supportbeefs@gmail.com</a>
       </footer>
     </main>
+    <script>
+      (function () {
+        var UUID_RE =
+          /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+        var APP_STORE = 'https://apps.apple.com/app/id6800880494';
+        var PLAY_STORE =
+          'https://play.google.com/store/apps/details?id=com.jovansreco.beefs';
+
+        var id = new URLSearchParams(location.search).get('beef');
+        if (!id || !UUID_RE.test(id)) return;
+
+        var ua = navigator.userAgent;
+        var isIOS = /iPhone|iPad|iPod/.test(ua);
+        var isAndroid = /Android/.test(ua);
+        if (!isIOS && !isAndroid) return;
+
+        var store = isIOS ? APP_STORE : PLAY_STORE;
+        var appLink = isAndroid
+          ? 'intent://beef/' +
+            id +
+            '#Intent;scheme=beefs;package=com.jovansreco.beefs;S.browser_fallback_url=' +
+            encodeURIComponent(PLAY_STORE) +
+            ';end'
+          : 'beefs:///beef/' + id;
+
+        var opened = false;
+        function markOpened() {
+          opened = true;
+        }
+        document.addEventListener('visibilitychange', function () {
+          if (document.hidden) markOpened();
+        });
+        window.addEventListener('pagehide', markOpened);
+        window.addEventListener('blur', markOpened);
+
+        location.href = appLink;
+        setTimeout(function () {
+          if (!opened) location.href = store;
+        }, 1500);
+      })();
+    </script>
   </body>
 </html>
